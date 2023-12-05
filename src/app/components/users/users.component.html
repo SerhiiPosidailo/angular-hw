@@ -1,0 +1,3 @@
+<app-user *ngFor="let user of users" [user]="user" (getPostEvent)="getUserId($event)"></app-user>
+
+<app-posts *ngFor="let post of userPost" [post]="post"></app-posts>
