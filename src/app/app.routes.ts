@@ -1,4 +1,5 @@
 import {Routes} from '@angular/router';
+
 import {MainLayoutComponent} from "./layouts";
 import {PostsDetailsPageComponent, PostsPageComponent, UserDetailsPageComponent, UsersPageComponent} from "./pages";
 

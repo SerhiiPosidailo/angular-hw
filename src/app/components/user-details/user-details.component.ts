@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
-import {IPost, IUser} from "../../interfaces";
-import {ActivatedRoute, Router} from "@angular/router";
-import {PostsService, UserService} from "../../service";
 import {NgIf} from "@angular/common";
+import {ActivatedRoute, Router} from "@angular/router";
+
+import {IPost, IUser} from "../../interfaces";
+import {PostsService, UserService} from "../../service";
 import {PostsPageComponent} from "../../pages";
 
 @Component({

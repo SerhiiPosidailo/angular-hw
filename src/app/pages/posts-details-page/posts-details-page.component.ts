@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import {PostDetailsComponent} from "../../components/post-details/post-details.component";
 
 @Component({

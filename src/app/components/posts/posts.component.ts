@@ -1,8 +1,9 @@
 import {Component, Input} from '@angular/core';
-import {IPost} from "../../interfaces";
-import {ActivatedRoute, Router} from "@angular/router";
-import {PostComponent} from "../post/post.component";
 import {NgForOf} from "@angular/common";
+import {ActivatedRoute, Router} from "@angular/router";
+
+import {IPost} from "../../interfaces";
+import {PostComponent} from "../post/post.component";
 
 @Component({
   selector: 'app-posts',

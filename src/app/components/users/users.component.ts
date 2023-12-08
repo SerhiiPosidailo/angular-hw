@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
+import {NgForOf} from "@angular/common";
+
 import {IUser} from "../../interfaces";
-import {HttpClient} from "@angular/common/http";
 import {UserService} from "../../service";
 import {UserComponent} from "../user/user.component";
-import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-users',

@@ -1,8 +1,7 @@
-import {Component, Input} from '@angular/core';
-import {PostsComponent} from "../../components/posts/posts.component";
+import {Component} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {IPost} from "../../interfaces";
-import {ActivatedRoute, Router} from "@angular/router";
+
+import {PostsComponent} from "../../components/posts/posts.component";
 
 @Component({
   selector: 'app-posts-page',
