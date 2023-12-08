@@ -1,12 +1,6 @@
 import {Routes} from '@angular/router';
 import {MainLayoutComponent} from "./layouts";
-import {
-  CommentsPageComponent,
-  PostsDetailsPageComponent,
-  PostsPageComponent,
-  UserDetailsPageComponent,
-  UsersPageComponent
-} from "./pages";
+import {PostsDetailsPageComponent, PostsPageComponent, UserDetailsPageComponent, UsersPageComponent} from "./pages";
 
 
 export const routes: Routes = [
@@ -15,16 +9,13 @@ export const routes: Routes = [
       {path: '', redirectTo: 'users', pathMatch: "full"},
       {path: 'users', component: UsersPageComponent},
       {
-        path: 'users/:userId', component: UserDetailsPageComponent, children: [
+        path: 'users/:id', component: UserDetailsPageComponent, children: [
           {path: 'posts', component: PostsPageComponent}
         ]
       },
       {
-        path: 'posts/:id', component: PostsDetailsPageComponent, children: [
-          {path: 'comments', component: CommentsPageComponent}
-        ]
+        path: 'posts/:id/details', component: PostsDetailsPageComponent
       }
     ]
-  },
-
-];
+  }
+]

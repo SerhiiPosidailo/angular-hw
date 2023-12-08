@@ -10,9 +10,14 @@ const urls = {
   },
 
   posts:{
-    base:posts,
+    byId: (id: number)=> `${posts}/${id}`,
     postsUserById:(id:number):string => `${users}/${id}/posts`
+  },
+
+  comments: {
+    byPostId: (postId: number)=> `${posts}/${postId}/comments`
   }
+
 }
 
 export {
