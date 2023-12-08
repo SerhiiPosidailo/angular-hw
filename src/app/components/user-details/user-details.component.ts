@@ -3,7 +3,7 @@ import {NgIf} from "@angular/common";
 import {ActivatedRoute, Router} from "@angular/router";
 
 import {IPost, IUser} from "../../interfaces";
-import {PostsService, UserService} from "../../service";
+import {UserService} from "../../service";
 import {PostsPageComponent} from "../../pages";
 
 @Component({
@@ -21,7 +21,7 @@ export class UserDetailsComponent {
   user: IUser;
   posts:IPost[]
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private userService: UserService, private postsService: PostsService) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private userService: UserService) {
     this.activatedRoute.params.subscribe(({id}) => {
       this.user = this.router.getCurrentNavigation()?.extras.state as IUser;
 
