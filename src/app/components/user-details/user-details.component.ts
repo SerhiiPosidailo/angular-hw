@@ -28,15 +28,11 @@ export class UserDetailsComponent {
       if (!this.user) {
         this.userService.getById(id).subscribe(value => this.user = value)
       }
-      this.postsService.getPostById(this.user.id).subscribe(value => this.posts = value)
     })
-
   }
 
   getPost() {
-    this.router.navigate(['posts'], {
-      relativeTo: this.activatedRoute,
-      state: this.posts
+    this.router.navigate(['users', this.user.id, 'posts'], {
     })
   }
 }
